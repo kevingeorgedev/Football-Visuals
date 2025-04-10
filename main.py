@@ -11,6 +11,8 @@ def clean_data(data : pd.DataFrame, teams : pd.DataFrame):
 data = pd.read_csv("data/Running Back Week 8.csv").drop(columns=['RK'])
 teams = pd.read_csv('data/teams.csv').drop(columns=['ID'])
 
+sns.set_theme(style="darkgrid")
+
 for col in teams.columns:
     data[col] = ''
 data = clean_data(data,teams)

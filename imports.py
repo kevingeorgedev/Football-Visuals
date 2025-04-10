@@ -5,3 +5,4 @@ from scipy.stats import norm, stats
 import math
 import tkinter as tk, customtkinter as ctk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import seaborn as sns
